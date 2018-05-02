@@ -1,0 +1,13 @@
+- name: Install Apache XAMPP from an EXE 
+  hosts: all 
+ 
+  tasks:
+     - name: download the 7-Zip package
+       win_get_url:
+         url: http://www.7-zip.org/a/7z1701-x64.msi
+         dest: C:\Users\LabAnsible\7z.msi
+
+     - name: ensure 7-Zip is installed via win_package
+       win_package:
+         path: C:\Users\LabAnsible\7z.msi
+         state: present
