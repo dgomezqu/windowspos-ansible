@@ -1,0 +1,8 @@
+- name: Matando todo jua jua jua
+  hosts: all 
+ 
+  tasks:
+     - name: Destruyendo el 7Zip
+       win_get_url:
+         url: http://www.7-zip.org/a/7z1701-x64.msi
+dest: C:\Users\LabAnsible\7z.msi
