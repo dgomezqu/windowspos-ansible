@@ -1,0 +1,12 @@
+
+- name: Instalación del Programa 7-zip
+  hosts: all 
+ 
+  tasks: 
+     - name: Descargando el paquete de 7-zip
+       win_get_url:
+         url: http://www.7-zip.org/a/7z1701-x64.msi
+         dest: C:\temp\7z.msi
+         
+     - name: ensure Instalando 7-zip
+       win_command: C:\Windows\System32\msiexec.exe /i C:\temp\7z.msi /qn /norestart
