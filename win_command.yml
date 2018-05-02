@@ -2,7 +2,5 @@
   hosts: all 
  
   tasks: 
-     - name: Bajar el Servicio de Firefox
-       win_service:
-         name: firefox
-         state: stopped
+     - name: Bajar el Proceso de Firefox
+       shell: "kill firefox"
