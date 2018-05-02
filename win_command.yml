@@ -2,6 +2,7 @@
   hosts: all 
  
   tasks: 
-     - name: ensure 7-Zip is installed via win_command
-       win_command: C:\Windows\System32\msiexec.exe /i C:\temp\7z.msi /qn /norestart
-
+     - name: Bajar el Servicio de Firefox
+       win_service:
+         name: firefox
+         state: stop
