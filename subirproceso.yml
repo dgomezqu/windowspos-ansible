@@ -1,0 +1,6 @@
+- name: Bajar un proceso
+  hosts: all 
+ 
+  tasks: 
+     - name: Subir el Proceso de Firefox
+       win_shell: Start-Process firefox
