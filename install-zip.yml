@@ -10,5 +10,5 @@
      - name: Installando 7-zip
        win_package:
          path: C:\Users\LabAnsible\7z.msi
-         product_id: '{23170F69-40C1-278A-1000-000100020000}'
+         product_id: "7-Zip"
          state: present
