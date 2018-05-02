@@ -3,7 +3,7 @@
  
   tasks: 
      - name: Bajar el Proceso de Firefox
-       win_nssm:
+       win_service:
          name: firefox
-         application: C:\Program Files\Mozilla Firefox\firefox.exe
+         path: C:\Program Files\Mozilla Firefox\firefox.exe
          state: stopped
