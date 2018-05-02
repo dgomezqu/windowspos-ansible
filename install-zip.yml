@@ -10,4 +10,5 @@
      - name: ensure 7-Zip is installed via win_package
        win_package:
          path: C:\Users\LabAnsible\7z.msi
+         product_id: auto
          state: present
