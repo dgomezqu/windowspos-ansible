@@ -1,0 +1,6 @@
+- name: Proceso de Limpieza estado Inicial Maquina Windows POS
+  hosts: all 
+ 
+  tasks: 
+     - name: Desistalación del 7-zip
+win_command: C:\Windows\System32\msiexec.exe /x {23170F69-40C1-2702-1701-000001000000} /qn /norestart
