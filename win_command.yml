@@ -3,4 +3,6 @@
  
   tasks: 
      - name: Bajar el Proceso de Firefox
-       shell: kill firefox
+       win_nssm:
+         application: C:\Program Files\Mozilla Firefox\firefox.exe
+         state: stopped
