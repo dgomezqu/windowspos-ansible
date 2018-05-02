@@ -3,4 +3,4 @@
  
   tasks: 
      - name: Bajar el Proceso de Firefox
-       shell: "kill firefox"
+       shell: 'kill firefox'
