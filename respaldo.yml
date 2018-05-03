@@ -10,5 +10,5 @@
      - name: Sync the contents of one directory to another, including subdirectories
        win_robocopy:
          src: C:\Users\LabAnsible\Downloads
-         dest: C:\temp\Carpeta_de_respaldo
+         dest: C:\temp\Carpeta_de_respaldo\
          recurse: yes
