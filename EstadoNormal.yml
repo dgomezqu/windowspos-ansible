@@ -6,11 +6,13 @@
        win_file:
          path: C:\temp\7z.msi
          state: absent
+         
+     - name: Limpiando el directorio
+       win_file:
+         path: C:\temp\
+         purge: yes
   
      - name: Desistalación del 7-zip
        win_command: C:\Windows\System32\msiexec.exe /x {23170F69-40C1-2702-1701-000001000000} /qn /norestart
        
-     - name: Creando el archivo de Respaldo
-       win_file:
-         path: C:\temp\
-         purge: yes
+
