@@ -9,10 +9,8 @@
          
      - name: Limpiando el directorio
        win_file:
-         path: C:\temp\
-         purge: yes
+         path: C:\temp\Carpeta de respaldo\
+         state: absent
   
      - name: Desistalación del 7-zip
        win_command: C:\Windows\System32\msiexec.exe /x {23170F69-40C1-2702-1701-000001000000} /qn /norestart
-       
-
