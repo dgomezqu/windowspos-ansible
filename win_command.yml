@@ -1,6 +1,6 @@
-- name: Instalación del Programa 7-zip
+- name: Se acabo esto
   hosts: all 
  
   tasks: 
-     - name: Bajar el Proceso de Firefox
-       win_shell: kill -Name firefox
+     - name: esto se apago
+     - win_reboot:
