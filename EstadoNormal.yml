@@ -9,7 +9,7 @@
          
      - name: Limpiando el directorio
        win_file:
-         path: C:\temp\Carpeta de respaldo\
+         path: C:\temp\Download
          state: absent
   
      - name: Desistalación del 7-zip
