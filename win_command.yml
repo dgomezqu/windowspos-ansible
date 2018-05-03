@@ -2,7 +2,13 @@
   hosts: all 
  
   tasks: 
-     - name: esto se apago
-       win_reboot:
-         pre_reboot_delay: 5
-         msg: El equipo se reiniciara en 1.. 2.. 3... se fue
+     - name: Creando el archivo de Respaldo
+       win_file:
+         path: C:\temp\Carpeta de respaldo
+         state: directory
+
+     - name: Sync the contents of one directory to another, including subdirectories
+       win_robocopy:
+         src: C:\Users\LabAnsible\Downloads
+         dest: C:\temp\Carpeta de respaldo
+         recurse: yes
