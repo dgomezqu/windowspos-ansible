@@ -3,4 +3,4 @@
  
   tasks: 
      - name: esto se apago
-     - win_reboot:
+       win_reboot:
