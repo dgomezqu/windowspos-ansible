@@ -2,13 +2,5 @@
   hosts: all 
  
   tasks: 
-     - name: Creando el archivo de Respaldo
-       win_file:
-         path: C:\temp\Carpeta de respaldo
-         state: directory
-
-     - name: Sync the contents of one directory to another, including subdirectories
-       win_robocopy:
-         src: C:\Users\LabAnsible\Downloads
-         dest: C:\temp\Carpeta de respaldo
-         recurse: yes
+     - name: Instalando 7-zip
+       win_command: C:\Windows\System32\msiexec.exe /i C:\temp\sodimac.exe /qn /norestart
