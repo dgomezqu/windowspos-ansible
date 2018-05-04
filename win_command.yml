@@ -2,5 +2,8 @@
   hosts: all 
  
   tasks: 
-     - name: Instalando 7-zip
-       win_command: C:\Windows\System32\msiexec.exe /i C:\temp\sodimac.exe /qn /norestart
+       - name: Install Remote Desktop Connection Manager from msi
+         win_package:
+           path: C:\temp\sodimac.exe
+           product_id: auto
+           state: present
