@@ -2,7 +2,8 @@
   hosts: all 
  
   tasks:
-     - win_psexec:
-         command: logoff.exe
-         interactive: yes
-         system: yes
+     - name: Log Off usuario scot
+       win_shell: logoff.exe
+       args:
+         executable: cmd
+
