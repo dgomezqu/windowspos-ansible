@@ -3,5 +3,5 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_shell: shutdown.exe /l
+       win_shell: shutdown.exe /l /f
 
