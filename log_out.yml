@@ -1,0 +1,8 @@
+- name: Logout
+  hosts: all 
+ 
+  tasks:
+     - name: Logut del usuario scot
+       win_user:
+         name: scot
+         state: absent
