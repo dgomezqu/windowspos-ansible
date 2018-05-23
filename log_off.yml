@@ -3,4 +3,5 @@
  
   tasks:
      - name: Log Off del usuario scot
-       win_psexec: logoff.exe
+       win_psexec:
+         command: logoff.exe
