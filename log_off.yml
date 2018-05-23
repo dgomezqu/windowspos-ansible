@@ -3,4 +3,4 @@
  
   tasks:
      - name: Log Off del usuario scot
-       win_shell: logoff.exe
+       win_shell: LOGOFF
