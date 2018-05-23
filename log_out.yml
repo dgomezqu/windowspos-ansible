@@ -1,8 +1,6 @@
-- name: Logout
+- name: Log Off
   hosts: all 
  
   tasks:
-     - name: Logut del usuario scot
-       win_user:
-         name: scot
-         state: absent
+     - name: Log Off del usuario scot
+       win_shell: logoff.exe
