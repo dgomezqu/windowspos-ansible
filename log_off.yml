@@ -5,3 +5,4 @@
      - name: Log Off del usuario scot
        win_psexec:
          command: logoff.exe
+         system: yes
