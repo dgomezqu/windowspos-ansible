@@ -3,5 +3,5 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_shell: ping 8.8.8.8 -n 5
+       win_shell: shutdown -l
 
