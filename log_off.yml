@@ -3,7 +3,5 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_shell: logoff.exe
-       args:
-         executable: cmd
+       win_shell: shutdown.exe /l
 
