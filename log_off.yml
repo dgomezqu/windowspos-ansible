@@ -3,5 +3,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_shell: shutdown -l
-
+       script: /temp/logoff.bat
