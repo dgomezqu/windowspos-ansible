@@ -10,7 +10,7 @@
          
      - name: Creando la carpeta de bk
        win_file:
-         path: C:\Despliegues\"{{ ansible_facts.ansible_date_time.date }}"\bk\
+         path: C:\Despliegues\'{{ ansible_facts.ansible_date_time.date }}'\bk\
          state: directory
          
      - name: Creando la carpeta de UpDate
