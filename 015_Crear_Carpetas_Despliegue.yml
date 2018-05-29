@@ -5,7 +5,7 @@
   tasks: 
      - name: Creando la carpeta con la fecha 
        win_file:
-         path: C:\Despliegues\nomanches.`date +%y_%m_%d`\
+         path: C:\Despliegues\{{ '%Y-%m-%d' | strftime }}\
          state: directory
          
      - name: Creando la carpeta de bk
