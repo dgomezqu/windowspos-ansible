@@ -5,4 +5,4 @@
      - name: Log Off usuario scot
        win_command: c:\temp\logoff.bat
          args:
-             executable: cmd
+           executable: cmd
