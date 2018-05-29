@@ -3,4 +3,6 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_command: C:\temp\logoff.bat
+       win_command: c:\temp\logoff.bat
+         args:
+            executable: cmd
