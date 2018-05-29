@@ -3,4 +3,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_shell: cmd /c logoff/?
+       win_shell: cmd /c calc
