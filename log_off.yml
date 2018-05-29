@@ -1,6 +1,5 @@
 - name: Log Off
   hosts: all
-  become_method: runas
  
   tasks:
      - name: Log Off usuario scot
