@@ -3,4 +3,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_command: C:\temp\progamita.bat >> C:\temp\programita.txt
+       win_shell: Start-Process powershell -Verb runAs "shutdown -l"
