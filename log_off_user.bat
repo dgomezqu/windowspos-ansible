@@ -1,1 +1,1 @@
-logoff.exe
+shutdown -l
