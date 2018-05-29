@@ -1,0 +1,7 @@
+- name: Detener SCOT
+  hosts: all
+  become_method: runas
+ 
+  tasks:
+     - name: Deteniendo los procesos de SCOT
+       win_command: c:\detenerscot.bat
