@@ -1,0 +1,17 @@
+
+- name: Crear directorios del despliegue
+  hosts: all 
+ 
+  tasks: 
+     - name: Creando la carpeta con la fecha del Despliegues
+       win_file:
+         path: C:\Despliegues\{{ ansible_facts.ansible_date_time.date }}\
+         state: directory
+     - name: Creando la carpeta de Despliegues
+       win_file:
+         path: C:\Despliegues\{{ ansible_facts.ansible_date_time.date }}\bk\
+         state: directory
+     - name: Creando la carpeta de Despliegues
+       win_file:
+         path: C:\Despliegues\{{ ansible_facts.ansible_date_time.date }}\UpDate\
+         state: directory
