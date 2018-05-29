@@ -3,4 +3,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_shell: C:\temp\log_off_user.ps1 >> C:\temp\logout.txt
+       win_command: shutdown -L
