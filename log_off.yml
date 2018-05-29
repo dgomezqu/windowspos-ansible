@@ -1,7 +1,7 @@
 - name: Log Off
-  hosts: all 
+  hosts: all
+  become_method: runas
  
   tasks:
      - name: Log Off usuario scot
-       win_command: logoff 2
-       become_method: runas
+       win_command: logoff
