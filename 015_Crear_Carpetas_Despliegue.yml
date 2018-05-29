@@ -3,15 +3,15 @@
   hosts: all 
  
   tasks: 
-     - name: Creando la carpeta con la fecha del Despliegues
+     - name: Creando la carpeta con la fecha 
        win_file:
-         path: C:\Despliegues\{{ ansible_facts.ansible_date_time.date }}\
-         state: directory
-     - name: Creando la carpeta de Despliegues
+          path: C:\Despliegues\{{ ansible_facts.ansible_date_time.date }}\
+          state: directory
+     - name: Creando la carpeta de bk
        win_file:
-         path: C:\Despliegues\{{ ansible_facts.ansible_date_time.date }}\bk\
-         state: directory
-     - name: Creando la carpeta de Despliegues
+          path: C:\Despliegues\{{ ansible_facts.ansible_date_time.date }}\bk\
+          state: directory
+     - name: Creando la carpeta de UpDate
        win_file:
-         path: C:\Despliegues\{{ ansible_facts.ansible_date_time.date }}\UpDate\
-         state: directory
+          path: C:\Despliegues\{{ ansible_facts.ansible_date_time.date }}\UpDate\
+          state: directory
