@@ -3,4 +3,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_shell: dir
+       win_shell: calc
