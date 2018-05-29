@@ -3,4 +3,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_shell: C:\temp\log_off_user.ps1
+       win_shell: log_off_user.bat
