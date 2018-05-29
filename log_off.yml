@@ -4,4 +4,3 @@
   tasks:
      - name: Log Off usuario scot
        win_command: "shutdown -L"
-       become: yes
