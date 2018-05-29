@@ -5,12 +5,12 @@
   tasks: 
      - name: Creando la carpeta con la fecha 
        win_file:
-         path: C:\Despliegues\fuk\
+         path: C:\Despliegues\"{{lookup('pipe','date +%Y%m%d')}}"\
          state: directory
          
      - name: Creando la carpeta de bk
        win_file:
-         path: C:\Despliegues\'{{ ansible_facts.ansible_date_time.date }}'\bk\
+         path: C:\Despliegues\"{{ ansible_facts.ansible_date_time.date }}"\bk\
          state: directory
          
      - name: Creando la carpeta de UpDate
