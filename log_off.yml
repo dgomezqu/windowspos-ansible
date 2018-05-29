@@ -3,4 +3,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       script: 'C:/temp/log_off_user.bat'
+       script: 'c:/temp/log_off_user.bat'
