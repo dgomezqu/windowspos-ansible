@@ -3,4 +3,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_command: shutdown
+       win_command: shutdown /l
