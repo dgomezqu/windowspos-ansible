@@ -56,8 +56,8 @@
          product_id: auto
          state: present     
       
-      - name: Instalando Sodimac_LaneSetup-6.0.5.13.127.exe
-        win_package:
-          path: C:\Despliegues\20180529\UpDate\Sodimac_LaneSetup-6.0.5.13.127.exe
-          product_id: auto
-          state: present        
+     - name: Instalando Sodimac_LaneSetup-6.0.5.13.127.exe
+       win_package:
+         path: C:\Despliegues\20180529\UpDate\Sodimac_LaneSetup-6.0.5.13.127.exe
+         product_id: auto
+         state: present        
