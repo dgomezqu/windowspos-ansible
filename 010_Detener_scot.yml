@@ -4,4 +4,4 @@
  
   tasks:
      - name: Deteniendo los procesos de SCOT
-       win_command: c:\detenerscot.bat
+       win_command: C:\SCOT\bin\detenerscot.bat
