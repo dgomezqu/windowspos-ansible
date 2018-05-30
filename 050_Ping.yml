@@ -4,5 +4,4 @@
  
   tasks: 
      - name: Prueba a la MV SUSE
-       net_ping:
-         dest: 192.168.56.22
+       net_ping: 192.168.56.22
