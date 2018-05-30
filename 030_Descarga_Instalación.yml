@@ -22,13 +22,37 @@
          url: http://172.20.10.3/sodimac/SSCO6.0.5_Build13_Hotfix_v15.exe
          dest: C:\Despliegues\20180529\UpDate\SSCO6.0.5_Build13_Hotfix_v15.exe
          
-     - name: Descargando el Paquete SSCO6.0.5_Build13_Hotfix_v15.exe
+     - name: Descargando el Paquete UpdateTB_SSF_6.0.5_Build13_v15.exe
        win_get_url:
          url: http://172.20.10.3/sodimac/UpdateTB_SSF_6.0.5_Build13_v15.exe
          dest: C:\Despliegues\20180529\UpDate\UpdateTB_SSF_6.0.5_Build13_v15.exe
-
+        
+     - name: Instalando UpdateTB_SSF_6.0.5_Build13_v15.exe
+       win_package:
+         path: C:\Despliegues\20180529\UpDate\UpdateTB_SSF_6.0.5_Build13_v15.exe
+         product_id: auto
+         state: present
+         
+     - name: Instalando SSCO6.0.5_Build13_Hotfix_v15.exe
+       win_package:
+         path: C:\Despliegues\20180529\UpDate\SSCO6.0.5_Build13_Hotfix_v15.exe
+         product_id: auto
+         state: present 
+    
+     - name: Instalando NextGenUI_v1.0.4_b555_Hotfix_v20.exe
+       win_package:
+         path: C:\Despliegues\20180529\UpDate\NextGenUI_v1.0.4_b555_Hotfix_v20.exe
+         product_id: auto
+         state: present
+      
      - name: Instalando SetupTB50RUNTIME.3.2.2.0015.exe
        win_package:
          path: C:\Despliegues\20180529\UpDate\SetupTB50RUNTIME.3.2.2.0015.exe
-         product_id: "SetupTB50RUNTIME.3.2.2.0015.exe"
-         state: present
+         product_id: auto
+         state: present     
+      
+      - name: Instalando Sodimac_LaneSetup-6.0.5.13.127.exe
+        win_package:
+         path: C:\Despliegues\20180529\UpDate\Sodimac_LaneSetup-6.0.5.13.127.exe
+         product_id: auto
+         state: present        
