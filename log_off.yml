@@ -4,4 +4,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_command: logoff 2
+       win_command: logoff 1
