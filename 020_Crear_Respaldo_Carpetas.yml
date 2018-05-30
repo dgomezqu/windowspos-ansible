@@ -1,1 +1,15 @@
 
+- name: Respaldo de Archivos
+  hosts: all 
+ 
+  tasks: 
+     - name: Creando el archivo de Respaldo
+       win_file:
+         path: C:\temp\Carpeta_de_respaldo\
+         state: directory
+
+     - name: Sync the contents of one directory to another, including subdirectories
+       win_robocopy:
+         src: C:\Users\LabAnsible\Downloads
+         dest: C:\temp\Carpeta_de_respaldo\
+         recurse: yes
