@@ -1,0 +1,8 @@
+
+- name: Prueba de conectividad
+  hosts: all 
+ 
+  tasks: 
+     - name: Prueba a la MV SUSE
+       net_ping:
+       dest: 192.168.56.22
