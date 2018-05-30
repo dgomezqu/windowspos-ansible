@@ -1,1 +1,1 @@
-logoff 2
+logoff 1
