@@ -1,4 +1,4 @@
-- name: Instalación del Programa 7-zip
+- name: Descarga de Paquetes
   hosts: all 
  
   tasks:
