@@ -11,5 +11,5 @@
      - name: Respaldando Config
        win_robocopy:
          src: C:\SCOT\Config
-         dest: C:\Despliegues\20180529\bk\Config
+         dest: C:\Despliegues\20180529\bk\config
          recurse: yes
