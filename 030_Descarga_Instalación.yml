@@ -2,6 +2,11 @@
   hosts: all 
  
   tasks:
+     - name: Descargando el Archivo CopyFile.bat
+       win_get_url:
+         url: http://172.20.10.3/sodimac/CopyFile.bat
+         dest: C:\Despliegues\20180529\UpDate\CopyFile.bat
+         
      - name: Descargando el Paquete NextGenUI_v1.0.4_b555_Hotfix_v20.exe
        win_get_url:
          url: http://172.20.10.3/sodimac/NextGenUI_v1.0.4_b555_Hotfix_v20.exe
