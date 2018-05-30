@@ -1,0 +1,34 @@
+- name: Instalación del Programa 7-zip
+  hosts: all 
+ 
+  tasks:
+     - name: Descargando el Paquete NextGenUI_v1.0.4_b555_Hotfix_v20.exe
+       win_get_url:
+         url: http://10.10.10.10/NextGenUI_v1.0.4_b555_Hotfix_v20.exe
+         dest: C:\Despliegues\20180529\UpDate\NextGenUI_v1.0.4_b555_Hotfix_v20.exe
+
+     - name: Descargando el Paquete SetupTB50RUNTIME.3.2.2.0015.exe
+       win_get_url:
+         url: http://10.10.10.10/SetupTB50RUNTIME.3.2.2.0015.exe
+         dest: C:\Despliegues\20180529\UpDate\SetupTB50RUNTIME.3.2.2.0015.exe
+
+     - name: Descargando el Paquete SetupTB50RUNTIME.3.2.2.0015.exe
+       win_get_url:
+         url: http://10.10.10.10/Sodimac_LaneSetup-6.0.5.13.127.exe
+         dest: C:\Despliegues\20180529\UpDate\Sodimac_LaneSetup-6.0.5.13.127.exe
+         
+     - name: Descargando el Paquete SSCO6.0.5_Build13_Hotfix_v15.exe
+       win_get_url:
+         url: http://10.10.10.10/SSCO6.0.5_Build13_Hotfix_v15.exe
+         dest: C:\Despliegues\20180529\UpDate\SSCO6.0.5_Build13_Hotfix_v15.exe
+         
+     - name: Descargando el Paquete SSCO6.0.5_Build13_Hotfix_v15.exe
+       win_get_url:
+         url: http://10.10.10.10/UpdateTB_SSF_6.0.5_Build13_v15.exe
+         dest: C:\Despliegues\20180529\UpDate\UpdateTB_SSF_6.0.5_Build13_v15.exe
+
+#     - name: Installando 7-zip
+#       win_package:
+#         path: C:\Users\LabAnsible\7z.msi
+#         product_id: "7-Zip"
+#         state: present
