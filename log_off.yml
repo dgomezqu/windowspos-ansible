@@ -4,4 +4,4 @@
  
   tasks:
      - name: Log Off usuario scot
-       win_command: log_off_user.bat
+       win_command: logoff 2
