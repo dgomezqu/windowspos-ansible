@@ -6,4 +6,4 @@
      - name: Reinicio POS
        win_reboot:
          pre_reboot_delay: 10
-         msg: Ejecutando reinicio luego de instalación
+         msg: Ejecutando reinicio luego de instalacion
