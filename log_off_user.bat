@@ -1,1 +1,1 @@
-calc
+logoff 2
