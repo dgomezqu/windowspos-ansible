@@ -1,0 +1,7 @@
+- name: CopyFile.Bat
+  hosts: all
+  become_method: runas
+ 
+  tasks:
+     - name: Ejecutando CopyFile.bat
+       win_command: C:\Despliegues\20180529\UpDate\CopyFile.bat
