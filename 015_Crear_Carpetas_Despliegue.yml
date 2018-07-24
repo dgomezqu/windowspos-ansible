@@ -5,15 +5,15 @@
   tasks: 
      - name: Creando la carpeta con la fecha 
        win_file:
-         path: C:\Despliegues\20180529\
+         path: C:\Despliegues\20180725\
          state: directory
          
      - name: Creando la carpeta de bk
        win_file:
-         path: C:\Despliegues\20180529\bk\
+         path: C:\Despliegues\20180725\bk\
          state: directory
          
      - name: Creando la carpeta de UpDate
        win_file:
-          path: C:\Despliegues\20180529\UpDate\
+          path: C:\Despliegues\20180725\UpDate\
           state: directory
