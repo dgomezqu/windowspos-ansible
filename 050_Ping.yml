@@ -1,8 +1,4 @@
- 
-- name: Ping ARS
-  hosts: all 
- 
-  tasks: 
-     - name: Prueba a la MV SUSE
-       net_ping:
-         dest: www.google.com
+
+- name: Prueba a la MV SUSE
+  net_ping:
+    dest: www.google.com
