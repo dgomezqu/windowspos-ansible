@@ -11,3 +11,9 @@
        win_get_url:
          url: http://10.32.20.110/sodimac/Sodimac_LaneSetup-6.0.5.13.144.exe
          dest: C:\Despliegues\20180731\UpDate\Sodimac_LaneSetup-6.0.5.13.144.exe
+         
+     - name: Instalando SSCO6.0.5_Build13_Hotfix_v15.exe
+        win_package:
+          path: C:\Despliegues\20180731\UpDate\Sodimac_LaneSetup-6.0.5.13.144.ex
+          product_id: auto
+          state: present 
