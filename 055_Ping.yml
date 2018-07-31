@@ -4,5 +4,4 @@
  
   tasks:
      - name: Ping MV SUSE
-        ping:
-         dest: 10.32.20.66
+        ping: 10.32.20.66
