@@ -5,29 +5,9 @@
      - name: Descargando el Archivo CopyFile.bat
        win_get_url:
          url: http://10.32.20.110/sodimac/CopyFile.bat
-         dest: C:\Despliegues\20180725\UpDate\CopyFile.bat
+         dest: C:\Despliegues\20180731\UpDate\CopyFile.bat
          
-     - name: Descargando el Paquete NextGenUI_v1.0.4_b555_Hotfix_v20.exe
+     - name: Descargando el Paquete Sodimac_LaneSetup-6.0.5.13.144.exe
        win_get_url:
-         url: http://10.32.20.110/sodimac/NextGenUI_v1.0.4_b555_Hotfix_v20.exe
-         dest: C:\Despliegues\20180725\UpDate\NextGenUI_v1.0.4_b555_Hotfix_v20.exe
-
-     - name: Descargando el Paquete SetupTB50RUNTIME.3.2.2.0015.exe
-       win_get_url:
-         url: http://10.32.20.110/sodimac/SetupTB50RUNTIME.3.2.2.0015.exe
-         dest: C:\Despliegues\20180725\UpDate\SetupTB50RUNTIME.3.2.2.0015.exe
-
-     - name: Descargando el Paquete Sodimac_LaneSetup-6.0.5.13.127.exe
-       win_get_url:
-         url: http://10.32.20.110/sodimac/Sodimac_LaneSetup-6.0.5.13.127.exe
-         dest: C:\Despliegues\20180725\UpDate\Sodimac_LaneSetup-6.0.5.13.127.exe
-         
-     - name: Descargando el Paquete SSCO6.0.5_Build13_Hotfix_v15.exe
-       win_get_url:
-         url: http://10.32.20.110/sodimac/SSCO6.0.5_Build13_Hotfix_v15.exe
-         dest: C:\Despliegues\20180725\UpDate\SSCO6.0.5_Build13_Hotfix_v15.exe
-         
-     - name: Descargando el Paquete UpdateTB_SSF_6.0.5_Build13_v15.exe
-       win_get_url:
-         url: http://10.32.20.110/sodimac/UpdateTB_SSF_6.0.5_Build13_v15.exe
-         dest: C:\Despliegues\20180725\UpDate\UpdateTB_SSF_6.0.5_Build13_v15.exe
+         url: http://10.32.20.110/sodimac/Sodimac_LaneSetup-6.0.5.13.144.exe
+         dest: C:\Despliegues\20180731\UpDate\Sodimac_LaneSetup-6.0.5.13.144.exe
