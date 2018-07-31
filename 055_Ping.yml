@@ -4,4 +4,4 @@
  
   tasks:
      - name: Ping MV SUSE
-       win_command: 
+       net_ping: 
