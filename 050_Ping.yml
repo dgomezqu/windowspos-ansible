@@ -1,4 +1,3 @@
 
 - name: Prueba a la MV SUSE
-  net_ping:
-    dest: www.google.com
+  shell: echo "Hi! Tower is working."
