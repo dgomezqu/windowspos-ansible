@@ -1,5 +1,5 @@
 - name: Ping ARS Arriba
-  hosts: all
+  hosts: 10.32.20.66
   become_method: runas
  
   tasks:
