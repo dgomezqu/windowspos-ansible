@@ -1,0 +1,7 @@
+- name: Ping ARS Arriba
+  hosts: all
+  become_method: runas
+ 
+  tasks:
+     - name: Ping MV SUSE
+       win_command: 
