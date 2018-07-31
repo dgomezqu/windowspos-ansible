@@ -4,4 +4,5 @@
  
   tasks:
      - name: Ping MV SUSE
-        net_ping: 
+        net_ping:
+          dest:
