@@ -6,10 +6,10 @@
      - name: Respaldando Bin
        win_robocopy:
          src: C:\SCOT\Bin
-         dest: C:\Despliegues\20180725\bk\bin
+         dest: C:\Despliegues\20180731\bk\bin
          recurse: yes
      - name: Respaldando Config
        win_robocopy:
          src: C:\SCOT\Config
-         dest: C:\Despliegues\20180725\bk\config
+         dest: C:\Despliegues\20180731\bk\config
          recurse: yes
