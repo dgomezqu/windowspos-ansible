@@ -4,3 +4,4 @@
  
   tasks:
      - name: Ejecutando CopyFile.bat
+       win_command: C:\Despliegues\20180725\UpDate\CopyFile.bat
