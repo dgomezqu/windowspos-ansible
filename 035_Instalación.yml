@@ -7,3 +7,4 @@
          path: C:\Users\support\Desktop\Sodimac_LaneSetup-6.0.5.13.144.exe
          product_id: auto
          arguments: /s
+         ignore_errors: True
