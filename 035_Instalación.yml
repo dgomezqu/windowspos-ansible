@@ -4,6 +4,6 @@
   tasks:         
      - name: Instalando Sodimac_LaneSetup-6.0.5.13.144.exe
        win_package:
-         path: C:\User\support\Desktop\Sodimac_LaneSetup-6.0.5.13.144.exe
+         path: C:\Users\support\Desktop\Sodimac_LaneSetup-6.0.5.13.144.exe
          product_id: auto
          arguments: /s
