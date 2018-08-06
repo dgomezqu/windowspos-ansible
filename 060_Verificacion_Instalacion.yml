@@ -3,7 +3,7 @@
   become_method: runas
  
   tasks:
-     - name: Revisión del InstalllHistory.log
-       win_shell: 'echo "Hola test"'
-       args:
-         stdin: Input message
+      - name: retrieve the input based on stdin
+        win_shell: '$string = [Console]::In.ReadToEnd(); Write-Output $string.Trim()'
+        args:
+          stdin: Input message
