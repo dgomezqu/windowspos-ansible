@@ -3,7 +3,7 @@
   become_method: runas
  
   tasks:
-      - name: retrieve the input based on stdin
-        win_shell: '$string = [Console]::In.ReadToEnd(); Write-Output $string.Trim()'
+      - win_shell: echo %HOMEDIR%
         args:
-          stdin: Input message
+          executable: cmd
+        register: homedir_out
