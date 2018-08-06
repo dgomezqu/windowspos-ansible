@@ -5,7 +5,5 @@
   tasks:
     - win_shell: Get-Content C:\SCOT\Install\InstallHistory.log -Tail 3
       register: result
-    - set_fact:
-      ec2_output: "{{ result.stdout|from_json }}"
     - debug:
-      var:  ec2_output
+      var:  result
