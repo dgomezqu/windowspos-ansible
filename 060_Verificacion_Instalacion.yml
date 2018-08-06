@@ -3,5 +3,9 @@
   become_method: runas
  
   tasks:
-      - win_shell: echo "Hello"
-        gather_facts: yes
+      - win_shell: |
+          get-psdrive
+        register: result
+      - debug:
+          var: result
+      gather_facts: False
