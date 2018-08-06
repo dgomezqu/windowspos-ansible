@@ -1,1 +1,7 @@
-Get-Content C:\SCOT\Install\InstallHistory.log
+- name: Revisar Instalación
+  hosts: all
+  become_method: runas
+ 
+  tasks:
+     - name: Deteniendo los procesos de SCOT
+       win_command: echo Get-Content C:\SCOT\Install\InstalllHistory.log -Tail 3
