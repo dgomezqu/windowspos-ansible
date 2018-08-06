@@ -5,3 +5,5 @@
   tasks:
     - win_shell: Get-Content C:\SCOT\Install\InstallHistory.log -Tail 3
       register: result
+    - debug:
+        var: result
