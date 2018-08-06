@@ -5,3 +5,4 @@
   tasks:
      - name: Deteniendo los procesos de SCOT
        win_command: C:\scot\bin\detenerscot-copy.bat
+       verbosity: 2
