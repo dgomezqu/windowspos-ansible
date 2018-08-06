@@ -4,4 +4,5 @@
  
   tasks:
      - name: Revisión del InstalllHistory.log
-       win_shell: echo >> Get-Content C:\SCOT\Install\InstallHistory.log -Tail 3 >> echo
+       win_shell: echo >> Get-Content C:\SCOT\Install\InstallHistory.log -Tail 3
+       verbosity: 2
