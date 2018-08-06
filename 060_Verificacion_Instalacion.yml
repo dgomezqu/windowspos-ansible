@@ -3,7 +3,5 @@
   become_method: runas
  
   tasks:
-      - win_shell: echo %HOMEDIR%
-        args:
-          executable: cmd
-        register: homedir_out
+      - win_shell: echo "Hello"
+        register: result
