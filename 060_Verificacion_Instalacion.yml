@@ -5,3 +5,5 @@
   tasks:
      - name: Revisión del InstalllHistory.log
        win_shell: echo "Hola test"
+       args:
+         stdin: Input message
