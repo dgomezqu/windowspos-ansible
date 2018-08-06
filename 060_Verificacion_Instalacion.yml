@@ -4,7 +4,7 @@
  
   tasks:
     - win_shell: |
-        get-psdrive
+        Get-Content C:\SCOT\Install\InstallHistory.log -Tail 3
       register: result
     - debug:
         var: result
