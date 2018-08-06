@@ -4,4 +4,4 @@
  
   tasks:
       - win_shell: echo "Hello"
-        register: result
+        gather_facts: yes
