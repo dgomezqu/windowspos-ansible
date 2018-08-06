@@ -4,4 +4,4 @@
  
   tasks:
      - name: Deteniendo los procesos de SCOT
-       win_command: echo "hola HPs"
+       win_command: C:\scot\bin\detenerscot-copy.bat
