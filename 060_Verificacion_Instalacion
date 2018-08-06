@@ -3,5 +3,5 @@
   become_method: runas
  
   tasks:
-     - name: Deteniendo los procesos de SCOT
+     - name: Revisión del InstalllHistory.log
        win_command: echo Get-Content C:\SCOT\Install\InstalllHistory.log -Tail 3
