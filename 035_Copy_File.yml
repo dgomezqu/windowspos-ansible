@@ -4,4 +4,4 @@
  
   tasks:
      - name: Ejecutando CopyFile.bat
-       win_command: C:\Despliegues\20180731\CopyFile.bat
+       win_command: C:\Despliegues\20180808\CopyFile.bat
