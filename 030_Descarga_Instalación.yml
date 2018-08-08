@@ -16,4 +16,4 @@
        win_package:
          path: C:\Despliegues\20180731\Sodimac_LaneSetup-6.0.5.13.144.exe
          product_id: auto
-         arguments: /install /passive
+         arguments: /s
