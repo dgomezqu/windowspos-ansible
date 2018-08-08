@@ -5,15 +5,15 @@
      - name: Descargando el Archivo CopyFile.bat
        win_get_url:
          url: http://10.32.20.110/sodimac/CopyFile.bat
-         dest: C:\Despliegues\20180731\CopyFile.bat
+         dest: C:\Despliegues\20180808\CopyFile.bat
          
      - name: Descargando el Paquete Sodimac_LaneSetup-6.0.5.13.144.exe
        win_get_url:
          url: http://10.32.20.110/sodimac/Sodimac_LaneSetup-6.0.5.13.144.exe
-         dest: C:\Despliegues\20180731\Sodimac_LaneSetup-6.0.5.13.144.exe
+         dest: C:\Despliegues\20180808\Sodimac_LaneSetup-6.0.5.13.144.exe
          
      - name: Instalando Sodimac_LaneSetup-6.0.5.13.144.exe
        win_package:
-         path: C:\Despliegues\20180731\Sodimac_LaneSetup-6.0.5.13.144.exe
+         path: C:\Despliegues\20180808\Sodimac_LaneSetup-6.0.5.13.144.exe
          product_id: auto
          arguments: /s
